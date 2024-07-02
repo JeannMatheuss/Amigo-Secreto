@@ -105,3 +105,4 @@ function reiniciar() {
     document.getElementById('lista-sorteio').innerHTML = '';
 }
 
+// Projeto finalizado 
