@@ -7,6 +7,13 @@ function adicionar() {
         alert('Digite o nome do amigo!');
         return;
     }
+
+    if(amigos.includes(amigo.value)) {
+        alert('Nome já adicionado!');
+        return;
+    }
+
+
     let lista = document.getElementById('lista-amigos');
 
 
@@ -79,7 +86,7 @@ function atualizarLista() {
         // Cria um elemento de parágrafo para cada amigo
         let paragrafo = document.createElement('p');
         paragrafo.textContent = amigos[i];
-       
+        
         // Adiciona um evento de clique para excluir o amigo
         paragrafo.addEventListener('click', function() {
             excluirAmigo(i);
